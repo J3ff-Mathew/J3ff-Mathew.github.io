@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id='clac'>
+        <form action="#" method="get">
+            <div class='row'>
+                <input type="text" name="display" id="display" autocomplete="off">
+            </div>
+            <div class='row'>
+                <input type="button" value="7" class="btn" onclick="form.display.value+='7'">
+                <input type="button" value="8" class="btn" onclick="form.display.value+='8'">
+                <input type="button" value="9" class="btn" onclick="form.display.value+='9'">
+                <input type="button" value="C" class="btn btnop" onclick="form.display.value=''">
+
+            </div>
+            <div class='row'>
+                <input type="button" value="4" class="btn " onclick="form.display.value+='4'">
+                <input type="button" value="5" class="btn" onclick="form.display.value+='5'">
+                <input type="button" value="6" class="btn" onclick="form.display.value+='6'">
+                <input type="button" value="<" class="btn btnop"
+                    onclick="form.display.value=form.display.value.substring(0,form.display.value.length*1 -1)">
+
+            </div>
+            <div class="row">
+                <input type="button" value="1" class="btn" onclick="form.display.value+='1'">
+                <input type="button" value="2" class="btn" onclick="form.display.value+='2'">
+                <input type="button" value="3" class="btn" onclick="form.display.value+='3'">
+                <input type="button" value="*" class="btn btnop" onclick="form.display.value+='*'">
+            </div>
+            <div class='row'>
+                <input type="button" value="0" class="btn" onclick="form.display.value+='0'">
+                <input type="button" value="+" class="btn btnop" onclick="form.display.value+='+'">
+                <input type="button" value="-" class="btn btnop" onclick="form.display.value+='-'">
+                <input type="button" value="/" class="btn btnop" onclick="form.display.value+='/'">
+
+            </div>
+            <div class="row">
+                <input type="button" value="00" class="btn btnop zero" onclick="form.display.value+='00'">
+                <input type="button" value="^" class="btn btnop" onclick="form.display.value+='**'">
+                <input type="button" value="=" class="btn btnop " id="equals" onclick="update()">
+            </div>
+        </form>
+    </div>
+    <div id="log">
+        <div id="calclog">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>

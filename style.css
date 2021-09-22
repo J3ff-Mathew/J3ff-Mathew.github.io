@@ -1,0 +1,84 @@
+.row {
+    width: 100%;
+    margin: 0.9rem 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#clac {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    float: left;
+}
+
+body {
+    background-color: #3a0ca3;
+}
+
+#display {
+    border-radius: 30px;
+    height: 4rem;
+    width: 90%;
+    border: none;
+    background-color: #343a40;
+    outline: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #343a40;
+    font-size: 3.5rem;
+    outline: none;
+    border: none;
+}
+
+form {
+    width: 90%;
+}
+
+.btn:hover {
+    background-color: #e85d04;
+}
+
+.btnop {
+    width: 5rem;
+    border-radius: 2rem;
+}
+
+.zero {
+    width: 7rem;
+}
+
+#log {
+
+    background-color: #3a0ca3;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4cc9f0;
+    width: 100%;
+    float: right;
+
+}
+
+#calclog {
+    width: 90%;
+    margin: auto;
+    text-align: right;
+    float: right;
+    overflow: auto;
+}
+
+.result {
+    color: #f72585;
+}
